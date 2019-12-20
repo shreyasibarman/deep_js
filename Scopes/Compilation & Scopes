@@ -1,0 +1,18 @@
+One effective of understanding scope is sorting colored marbles into buckets of their matching color.
+
+Imagine you come across a pile of marbles, and notice that all the marbles are colored red, blue, or green.
+To sort all the marbles, let's drop the red ones into a red bucket, green into a green bucket, and blue into a blue bucket.
+After sorting, when you later need a green marble, you already know the green bucket is where to go to get it.
+
+In this metaphor, the marbles are the variables in our program. The buckets are scopes (functions and blocks), which we just conceptually assign individual colors for our discussion purposes. The color of each marble is thus determined by which color scope we find the marble originally created in.
+
+->
+The compiler stage will decide the scopes of all formal declarations. Rest will be executed in the next stage, run-time stage.
+lines 1,3,8 - red marbles 
+lines 4 - blue marbles
+lines 9 - green
+
+->
+All lexical scopes are decided during compile time.
+
+￼￼
