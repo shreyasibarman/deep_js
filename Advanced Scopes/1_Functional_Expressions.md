@@ -11,4 +11,5 @@ Hence line 9 will give _Reference Error_ as it’s not red, it’s blue.
 
 Function expression is also **read-only**.
 
-![](deepimages2/1.jpeg)
+<img src="deepimages2/1.jpeg" height="300px" width="400px" >
+
