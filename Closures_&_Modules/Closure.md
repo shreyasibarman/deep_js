@@ -7,7 +7,7 @@ It works even when a scope in which it was originally defined in is conceptually
 
 ### Preservation of scope : 
 Closure is the linkage back to the original scope when it was defined (no matter when it is executed, it retains the value).
-Closure doesn’t capture values, it preserves access to the variables (in more detail in next chapter).
+Closure doesn’t capture values, it preserves access to the variables.
 JS implements closure as linkage to the _entire_ scope, not per variable basis. 
 
 Closure is a _scope-based function_ because **it works per scope, not per variable.**
