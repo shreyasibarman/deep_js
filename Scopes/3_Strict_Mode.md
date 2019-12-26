@@ -5,4 +5,4 @@ In strict mode, topic will create _Reference Error_ as it has never been declare
 
 Hence always use strict mode to avoid creation of auto-globals (bad practice!)
 
-![](deepimages/3.jpeg)
+<img src="deepimages/3.jpeg" width="400px" height="300px">
