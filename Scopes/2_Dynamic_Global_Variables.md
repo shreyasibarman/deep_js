@@ -10,7 +10,24 @@ The global variable _teacher_ will change to “Suzy”.
 
 Since _topic_ doesn’t exist in global scope, dynamic global variable _topic_ will be created (known as "auto-global") during run time.
 
+<img src="deepimages/2.jpeg" width="400px" height="300px">
+
 #### Note :
 Creating auto-globals is a bad practice as it happens in run time can behave in an unpredictable manner: always declare your global variables, avoid making auto-globals.
 
-![](deepimages/2.jpeg)
+```javascript
+var teacher = "kyle";
+
+function otherclass(){
+  teacher = "suzy";
+  topic = "react";
+  console.log("welcome");
+}
+
+otherclass();
+
+console.log(teacher);
+console.log(topic);
+```
+
+
