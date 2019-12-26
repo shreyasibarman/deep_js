@@ -15,19 +15,6 @@ Since _topic_ doesn’t exist in global scope, dynamic global variable _topic_ w
 #### Note :
 Creating auto-globals is a bad practice as it happens in run time can behave in an unpredictable manner: always declare your global variables, avoid making auto-globals.
 
-```javascript
-var teacher = "kyle";
 
-function otherclass(){
-  teacher = "suzy";
-  topic = "react";
-  console.log("welcome");
-}
-
-otherclass();
-
-console.log(teacher);
-console.log(topic);
-```
 
 
