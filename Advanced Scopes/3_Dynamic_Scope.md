@@ -19,4 +19,4 @@ Not used in JS (example is theoretical).
 
 Used in _Bash Script_.
 
-![](deepimages2/3.jpeg)
+<img src="deepimages2/3.jpeg" height="300px" width="400px" >
