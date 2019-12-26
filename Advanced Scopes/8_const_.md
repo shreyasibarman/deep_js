@@ -13,4 +13,5 @@ Mutating the value is allowed for const.
 
 _const_ and _final_ different.
 
-![](deepimages2/8.jpeg)
+
+<img src="deepimages2/8.jpeg" height="300px" width="400px" >
