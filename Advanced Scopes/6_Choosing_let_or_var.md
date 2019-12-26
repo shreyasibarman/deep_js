@@ -16,4 +16,5 @@ _var_ is more appropriate for it.
 _let_ cannot be re-declared.
 _const_ can’t be left uninitialised, has to be initialised when declaring.
 
-![](deepimages2/6.jpeg)
+
+<img src="deepimages2/6.jpeg" height="300px" width="400px" >
