@@ -13,4 +13,4 @@ In line 14 _ask_ gives _Reference Error_ because red scope doesn’t have _ask_ 
 #### Note :
 Unlike Auto Globals, when  a ‘source’ is asked for, it's global won’t create it automatically.
 
-![](deepimages/4.jpeg)
+<img src="deepimages/4.jpeg" width="400px" height="300px">
