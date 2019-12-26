@@ -18,4 +18,5 @@ Line 9 - Green marble
 ##### *Note* :
 All lexical scopes are decided during compile time. Only the formal declarations (vars, function abc(), etc.) are the marbles considered during compilation. Rest of the statements are executed during runtime stage.
 
-![](deepimages/1.jpeg)
+
+<img src="deepimages/1.jpeg" height="300px" width="400px" >
