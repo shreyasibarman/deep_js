@@ -1,6 +1,7 @@
 # What is Closure?
 
-Closure is when a function “remembers” it’s lexical scope even when the function is executed outside that lexical scope (or a different scope).
+Closure can be defined as
+> When a function “remembers” it’s lexical scope even when the function is executed outside that lexical scope (or a different scope).
 
 It works even when a scope in which it was originally defined in is conceptually gone away, if the function survived that was within that scope, didn’t go away, it is able to _hold the reference to that scope and continues to have access_.
 
