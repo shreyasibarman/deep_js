@@ -10,4 +10,5 @@ But narrows scope hence helpful.
 
 Use _let_ as soon as open curly braces to describe couple of variables.
 
-![](deepimages2/7.jpeg)
+
+<img src="deepimages2/7.jpeg" height="300px" width="400px" >
