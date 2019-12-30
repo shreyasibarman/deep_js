@@ -58,12 +58,12 @@ How does the Prototype Chain work:
 - Basically these properties and relationships are in place to tell this narrative that a **class system** has occured.
 
 ## Dunder Prototypes
-- The __proto__ property is a simple accessor property on Object.prototype consisting of a getter and setter function.
+- The \_\_proto\_\_ property is a simple accessor property on Object.prototype consisting of a getter and setter function.
 - It can _set_ the object [[Prototype]] on creation, as an alternative to Object.create(). 
-- The __proto__ setter allows the [[Prototype]] of an object to be mutated.
+- The \_\_proto\_\_ setter allows the [[Prototype]] of an object to be mutated.
 
 ```ins1.__proto__```
-- The __proto__ getter function exposes the value of the internal [[Prototype]] of an object. 
+- The \_\_proto\_\_ getter function exposes the value of the internal [[Prototype]] of an object. 
 - In the above code, **ins1** doesn't have the property, so it goes up to **workshop.prototype** which still doesn't have the property.
 - Next it goes up to **Object.prototype**, it does have **\_\_proto\_\_** but it's NOT  a property, it's a **_getter function_**.
 - Even though it's not a property, since it's a function, when it is invoked inside **Object.prototype**, it's _this_ keyword will be pointing to **ins1** (call-site, _this_-binding rule), and invokes **\_\_proto\_\_** in the context of the instance.
