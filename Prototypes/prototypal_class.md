@@ -58,6 +58,9 @@ How does the Prototype Chain work:
 - Basically these properties and relationships are in place to tell this narrative that a **class system** has occured.
 
 ## Dunder Prototypes
+- The __proto__ property is a simple accessor property on Object.prototype consisting of a getter and setter function.
+- It can _set_ the object [[Prototype]] on creation, as an alternative to Object.create(). 
+- The __proto__ setter allows the [[Prototype]] of an object to be mutated.
 
 ```ins1.__proto__```
 - The __proto__ getter function exposes the value of the internal [[Prototype]] of an object. 
