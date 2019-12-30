@@ -3,7 +3,7 @@
 - It is a _syntactic sugar_ layered on top of the Prototype system.
 
 ```javascript
-class workshop{
+class Workshop{
   constructor(teacher){
     this.teacher = teacher;
   }
@@ -12,8 +12,8 @@ class workshop{
   }
 }
 
-var obj1 = new workshop("kyle");
-var obj2 = new workshop("suzy");
+var obj1 = new Workshop("kyle");
+var obj2 = new Workshop("suzy");
 
 obj1.ask("class instance 1?");
 obj2.ask("class instance 2?");
@@ -24,7 +24,7 @@ obj2.ask("class instance 2?");
 # Extending classes
 
 ```javascript
-class workshop{
+class Workshop{
   constructor(teacher){
     this.teacher = teacher;
   }
@@ -33,13 +33,13 @@ class workshop{
   }
 }
 
-class another extends workshop{
+class Another extends Workshop{
   speak(msg){
     this.ask(msg);
   }
 }
 
-var obj1 = new another("kyle");
+var obj1 = new Another("kyle");
 
 obj1.ask("class extended");
 // kyle class extended 
@@ -50,7 +50,7 @@ obj1.ask("class extended");
 - before ES6 there was no way to do relative polymorphism, hence no equivalent of _super_ keyword.
 
 ```javascript
-class workshop{
+class Workshop{
   constructor(teacher){
     this.teacher = teacher;
   }
@@ -59,13 +59,13 @@ class workshop{
   }
 }
 
-class another extends workshop{
+class Another extends Workshop{
   ask(msg){
     super.ask(msg.toUpperCase());
   }
 }
 
-var obj1 = new another("kyle");
+var obj1 = new Another("kyle");
 
 obj1.ask("using super");
 // kyle USING SUPER 
