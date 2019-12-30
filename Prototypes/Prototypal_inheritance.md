@@ -47,4 +47,12 @@ using ```Object.create(workshop.prototype)```
 - There is NO copy operation in prototypes, only linkages.
 - Both are different design patterns and behave differently.
 
+# Prototypal Inheritance is a Delegation
+
+- JS' _Prototype System_ is a **Delegation System**, NOT a **Class System**.
+- **Delegation** basically is the system of linkages instead of copy operations.
+- Prototypal System is basically more powerful than Class System.
+- Class System is a **subset** of Prototypal System because we can implement Class System inside Prototypal System, but we can't do the reverse.
+
+
 
