@@ -43,7 +43,7 @@ for (var i = 1; i <= 3; i++) {
 
 The reason the result gives 4,4,4 instead of 1,2,3 is because _i_ is only one variable, and as we studied earlier, _closure preserves access to variables (not value)_, so it preserves the value of the last instance of i.e. 4.
 
-To recieve 3 different values, we needed 3 different variables, which can be achieved by using a **block scoped declaration**
+To recieve 3 different values, we needed 3 different variables, which can be achieved by using a **block scoped declaration** _(Solution using Scope)_
 
 ```javascript
 for (var i = 1; i <= 3; i++) {
