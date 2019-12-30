@@ -19,7 +19,7 @@ The _Classic Module Pattern_ is also known as the _Revealing Module Pattern_.
 >Modules encapsulate data and behaviour (methods) together. The state (data) of the module is held by its methods via closure.
 
 ```javascript
-function coolmodule() {
+function Coolmodule() {
   var something = "cool";
   var another = [1, 2, 3];
 
@@ -37,7 +37,7 @@ function coolmodule() {
   };
 }
 
-var fool = coolmodule();
+var fool = Coolmodule();
 
 fool.doSomething(); // cool
 fool.doAnother(); // 1 ! 2 ! 3
@@ -54,7 +54,7 @@ We can also create a module in the form of IIFEs. However, it will be a **single
 For multiple module instances, we need to create a _module factory_.
 
 ```javascript
-var fool = (function coolmodule() {
+var fool = (function Coolmodule() {
     var something = "cool";
     var another = [1, 2, 3];
 
