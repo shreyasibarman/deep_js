@@ -1,25 +1,25 @@
 # Prototypal Inheritance
 
 ```javascript
-function workshop(teacher) {
+function Workshop(teacher) {
   this.teacher = teacher;
 }
 
-workshop.prototype.ask = function(question) {
+Workshop.prototype.ask = function(question) {
   console.log(this.teacher, question);
 };
 
-function anotherworkshop(teacher){
+function Anotherworkshop(teacher){
   workshop.call(this,teacher);
 }
 
-anotherworkshop.prototype = Object.create(workshop.prototype);
+Anotherworkshop.prototype = Object.create(workshop.prototype);
 
-anotherworkshop.prototype.speakup = function(msg){
+Anotherworkshop.prototype.speakup = function(msg){
   this.ask(msg.toUpperCase());
 }
 
-var ins1 = new anotherworkshop("kyle");
+var ins1 = new Anotherworkshop("kyle");
 
 ins1.speakup("is this inheritance");
 // kyle IS THIS INHERITANCE
