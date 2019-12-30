@@ -32,3 +32,19 @@ using ```Object.create(workshop.prototype)```
 
 ### Classical vs. Prototypal Inheritance
 
+##### Classical Inheritance :
+- The properties of classes are _copied_ from class to instance. Similarly, properties of parent class are _copied_ to child class.
+- Arrows move from **left-to-right** and **top-to-bottom** because they're **fundamentally copy operations**
+
+<img src="classical_inheritance.png" width="400px" height="300px">
+
+##### Prototypal Inheritance :
+- The properties of prototypes are _linked_ from prototype object to instance object. Similarly, properties of  different prototypes are _linked_ to from second protobject to first protobject.
+- Arrows move from **right-to-left** and **bottom-to-top** because they're **linkages**
+
+<img src="prototypal_inheritance.png" width="400px" height="300px">
+
+- There is NO copy operation in prototypes, only linkages.
+- Both are different design patterns and behave differently.
+
+
