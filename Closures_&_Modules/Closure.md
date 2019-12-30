@@ -75,7 +75,7 @@ for (let i = 1; i <= 3; i++) {
 
 In the above code the _let_ statement is actually executing inside the loop even though its written with the for statement. Happens with for, for in, for of, etc.
 
-Another approach to solve the problem without using _let_ or _const_ is by with closure using IIFE
+Another approach to solve the problem without using _let_ or _const_ is by using IIFE
 
 ```javascript
 for(var i=1;i<=3;i++) {
