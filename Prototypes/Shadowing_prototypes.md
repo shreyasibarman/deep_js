@@ -1,15 +1,15 @@
 # Shadowing Prototypes
 
 ```javascript
-function workshop(teacher) {
+function Workshop(teacher) {
   this.teacher = teacher;
 }
 
-workshop.prototype.ask = function(question) {
+Workshop.prototype.ask = function(question) {
   console.log(this.teacher, question);
 };
 
-var ins1 = new workshop("kyle");
+var ins1 = new Workshop("kyle");
 
 ins1.ask = function(question) {
   this.ask(question.toUpperCase());
@@ -24,15 +24,15 @@ ins1.ask("oops, is this infinite recursion");
 #### So how to go one level up to access _workshop.prototype.ask_ :
 
 ```javascript
-function workshop(teacher) {
+function Workshop(teacher) {
   this.teacher = teacher;
 }
 
-workshop.prototype.ask = function(question) {
+Workshop.prototype.ask = function(question) {
   console.log(this.teacher, question);
 };
 
-var ins1 = new workshop("kyle");
+var ins1 = new Workshop("kyle");
 
 ins1.ask = function(question) {
   this.__proto__.ask.call(this, question.toUpperCase());
