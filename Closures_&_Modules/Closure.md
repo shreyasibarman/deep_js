@@ -34,7 +34,7 @@ It rather ***Preserves access to variables***.
 for (var i = 1; i <= 3; i++) {
   setTimeout(function() {
     console.log(`i: ${i}`);
-  }, i * 1000);
+  }, i * 0);
 }
 // i: 4
 // i: 4
@@ -50,7 +50,7 @@ for (var i = 1; i <= 3; i++) {
   let j = i;
   setTimeout(function() {
     console.log(`j: ${j}`);
-  }, j * 1000);
+  }, j * 0);
 }
 // j: 1
 // j: 2
@@ -66,7 +66,7 @@ Or we can implement the above code as :
 for (let i = 1; i <= 3; i++) {
   setTimeout(function() {
     console.log(`i: ${i}`);
-  }, i * 1000);
+  }, i * 0);
 }
 // i: 1
 // i: 2
@@ -75,5 +75,19 @@ for (let i = 1; i <= 3; i++) {
 
 In the above code the _let_ statement is actually executing inside the loop even though its written with the for statement. Happens with for, for in, for of, etc.
 
+Another approach to solve the problem without using _let_ or _const_ is by with closure using IIFE
+
+```javascript
+for(var i=1;i<=3;i++) {
+  (function(i){
+    setTimeout(function(){
+    console.log(i);
+  },0);
+  })(i);
+}
+// 1
+// 2
+// 3
+```
 #### Note :
 Use of const will give an error as it is trying to modify the variable in i++.
