@@ -60,6 +60,7 @@ How does the Prototype Chain work:
 ## Dunder Prototypes
 
 ```ins1.__proto__```
+- The __proto__ getter function exposes the value of the internal [[Prototype]] of an object. 
 - In the above code, **ins1** doesn't have the property, so it goes up to **workshop.prototype** which still doesn't have the property.
 - Next it goes up to **Object.prototype**, it does have **\_\_proto\_\_** but it's NOT  a property, it's a **_getter function_**.
 - Even though it's not a property, since it's a function, when it is invoked inside **Object.prototype**, it's _this_ keyword will be pointing to **ins1** (call-site, _this_-binding rule), and invokes **\_\_proto\_\_** in the context of the instance.
