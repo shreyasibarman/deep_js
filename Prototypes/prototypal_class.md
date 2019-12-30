@@ -1,17 +1,17 @@
 # Prototypal Class
 
 ```javascript
-function workshop(teacher) {
+function Workshop(teacher) {
   this.teacher = teacher;
 }
 
 //ask-property
-workshop.prototype.ask = function(question) {
+Workshop.prototype.ask = function(question) {
   console.log(this.teacher, question);
 };
 
-var ins1 = new workshop("kyle");
-var ins2 = new workshop("suzy");
+var ins1 = new Workshop("kyle");
+var ins2 = new Workshop("suzy");
 
 ins1.ask("is this prototype?");
 ins2.ask("is this prototype?");
@@ -30,28 +30,28 @@ ins2.ask("is this prototype?");
 <img src="protochain.png" width="500px" height="400px">
 
 ```javascript
-function workshop(teacher) {
+function Workshop(teacher) {
   this.teacher = teacher;
 }
 
-workshop.prototype.ask = function(question) {
+Workshop.prototype.ask = function(question) {
   console.log(this.teacher, question);
 };
 
-var ins1 = new workshop("kyle");
+var ins1 = new Workshop("kyle");
 
-console.log(ins1.constructor === workshop); //true
-console.log(ins1.__proto__ === workshop.prototype); //true
+console.log(ins1.constructor === Workshop); //true
+console.log(ins1.__proto__ === Workshop.prototype); //true
 console.log(Object.getPrototypeOf(ins1) === workshop.prototype); //true
 
 console.log(ins1.__proto__); // Object {ask: function ()}
-console.log(workshop.prototype.__proto__); // null
+console.log(Workshop.prototype.__proto__); // null
 console.log(Object.prototype); // null
-console.log(workshop.prototype.__proto__ === Object.prototype); //true
+console.log(Workshop.prototype.__proto__ === Object.prototype); //true
 ```
 How does the Prototype Chain work:
 
-```ins1.constructor === workshop // true```
+```ins1.constructor === Workshop // true```
 - First, it checks for _constructor_ in **ins1**, doesn't exist.
 - Then it looks up to the object linked to it i.e. **workshop.prototype**, it does have a _constructor property_ which points to **workshop**, hence it gives _true_.
 - From the statement it seems like **ins1** was constructed by **workshop**, but we know that it was constructed by the _new_ keyword, sowhy :
